@@ -1,0 +1,932 @@
+@charset "UTF-8";
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 4, ../sass/_resett.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 5, ../sass/_resett.scss */
+body {
+  padding: 0;
+  margin: 0;
+  font: 0.875em 'Myriad Pro', Arial, sans-serif;
+  color: #fff;
+}
+
+/*14px*/
+/* line 6, ../sass/_resett.scss */
+div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, td, tr, form, fieldset, label, select, input, textarea {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  list-style: none;
+}
+
+/* line 12, ../sass/_resett.scss */
+select, input, textarea {
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+/* line 13, ../sass/_resett.scss */
+textarea {
+  vertical-align: top;
+}
+
+/* line 14, ../sass/_resett.scss */
+:focus {
+  outline: none;
+}
+
+/* line 15, ../sass/_resett.scss */
+input[type=submit] {
+  cursor: pointer;
+}
+
+/* line 16, ../sass/_resett.scss */
+img, fieldset {
+  border: 0;
+}
+
+/* line 17, ../sass/_resett.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 18, ../sass/_resett.scss */
+a:link, a:visited {
+  font: 0.875em 'Myriad Pro', Arial, sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+/*14px*/
+/* line 19, ../sass/_resett.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 23, ../sass/_resett.scss */
+.float-r {
+  float: right !important;
+}
+
+/* line 24, ../sass/_resett.scss */
+.float-l {
+  float: left !important;
+}
+
+/* line 25, ../sass/_resett.scss */
+.no-float {
+  float: none !important;
+}
+
+/* line 26, ../sass/_resett.scss */
+.no-border {
+  border: 0 !important;
+}
+
+/* line 27, ../sass/_resett.scss */
+.no-bg {
+  background: none !important;
+}
+
+/* line 28, ../sass/_resett.scss */
+.no-margin {
+  margin: 0 !important;
+}
+
+/* line 29, ../sass/_resett.scss */
+.no-padding {
+  padding: 0 !important;
+}
+
+/* line 30, ../sass/_resett.scss */
+.no-display {
+  display: none !important;
+}
+
+/* line 31, ../sass/_resett.scss */
+.display {
+  display: block !important;
+}
+
+/* line 32, ../sass/_resett.scss */
+.inline {
+  display: inline !important;
+}
+
+/* line 33, ../sass/_resett.scss */
+.overflow {
+  overflow: hidden !important;
+}
+
+/* line 34, ../sass/_resett.scss */
+.align-r {
+  text-align: right !important;
+}
+
+/* line 35, ../sass/_resett.scss */
+.align-l {
+  text-align: left !important;
+}
+
+/* line 36, ../sass/_resett.scss */
+.align-c {
+  text-align: center !important;
+}
+
+/* line 37, ../sass/_resett.scss */
+.clear {
+  clear: both;
+}
+
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 14, ../../../susy-2.1.3/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*
+debug: (
+        image: show, // ╨▓╨░╤А╨╕╨░╨╜╤В╤Л: show | hide | show-columns | show-baseline
+        color: rgba(#66f, .5),
+        output: background,
+        toggle: top right,
+    )
+*/
+/* line 36, ../sass/_grids.scss */
+.conteiner {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+.conteiner:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/*******************************/
+/*******************************/
+/* line 45, ../sass/_grids.scss */
+.big-header header {
+  background: #1E323E;
+}
+/* line 47, ../sass/_grids.scss */
+.big-header header .header-wrap {
+  overflow: hidden;
+  *zoom: 1;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+}
+/* line 52, ../sass/_grids.scss */
+.big-header header .header-wrap h1 {
+  width: 28.31325%;
+  float: left;
+  margin-left: 1.20482%;
+  max-width: 255px;
+  max-height: 135px;
+  overflow: hidden;
+  *zoom: 1;
+  position: absolute;
+  top: 0;
+  left: 7.22892%;
+  z-index: 999;
+}
+/* line 64, ../sass/_grids.scss */
+.big-header header .header-wrap nav.nav-main ul.main-menu {
+  height: 74px;
+  width: 68.37349%;
+  float: right;
+  margin-left: 1.20482%;
+}
+/* line 67, ../sass/_grids.scss */
+.big-header header .header-wrap nav.nav-main ul.main-menu li {
+  display: inline;
+}
+/* line 69, ../sass/_grids.scss */
+.big-header header .header-wrap nav.nav-main ul.main-menu li a {
+  padding: 7% 3%;
+  line-height: 600%;
+  text-transform: uppercase;
+}
+/* line 73, ../sass/_grids.scss */
+.big-header header .header-wrap nav.nav-main ul.main-menu li a:hover {
+  background: #199BD9;
+}
+/* line 80, ../sass/_grids.scss */
+.big-header header .header-wrap nav.nav-main ul.main-menu li.active a {
+  background: #199BD9;
+}
+/* line 89, ../sass/_grids.scss */
+.big-header header .flexslider {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  min-height: 450px;
+  position: relative;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 95, ../sass/_grids.scss */
+.big-header header .flexslider .slides {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 100, ../sass/_grids.scss */
+.big-header header .flexslider .slides li {
+  float: left;
+}
+/* line 106, ../sass/_grids.scss */
+.big-header header .flexslider .flex-pauseplay a {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+}
+/* line 112, ../sass/_grids.scss */
+.big-header header .flexslider .flex-control-nav {
+  position: absolute;
+  bottom: 5%;
+  right: 15%;
+}
+
+/* line 124, ../sass/_grids.scss */
+section.wrapp {
+  /***********************************/
+  /***********************************/
+  /***********************************/
+  /***********************************/
+}
+/* line 129, ../sass/_grids.scss */
+section.wrapp .sidebar {
+  width: 21.56627%;
+  float: left;
+  margin-left: 1.20482%;
+  overflow: hidden;
+  *zoom: 1;
+  position: relative;
+  z-index: 12;
+  top: -42px;
+  left: 5.96386%;
+}
+
+.fa-chevron-right:before {
+    background: #5EB9E5;
+    padding: 13px 15px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+/* line 137, ../sass/_grids.scss */
+section.wrapp .sidebar .news {
+  background: #199BD9;
+  margin-bottom: 5%;
+}
+/* line 140, ../sass/_grids.scss */
+section.wrapp .sidebar .news ul {
+  margin-bottom: 40%;
+}
+/* line 142, ../sass/_grids.scss */
+section.wrapp .sidebar .news ul li {
+  border-bottom: 1px solid #3CAADF;
+  padding: 11px;
+}
+/* line 145, ../sass/_grids.scss */
+section.wrapp .sidebar .news ul li a {
+  display: block;
+  font-size: 1.1428em;
+  line-height: 120%;
+}
+/* line 149, ../sass/_grids.scss */
+section.wrapp .sidebar .news ul li a i {
+  float: right;
+}
+/* line 155, ../sass/_grids.scss */
+section.wrapp .sidebar .news ul li:hover a {
+  font-weight: bold;
+}
+/* line 160, ../sass/_grids.scss */
+section.wrapp .sidebar .news ul li.active {
+  position: relative;
+}
+/* line 162, ../sass/_grids.scss */
+section.wrapp .sidebar .news ul li.active a {
+  font-weight: bold;
+}
+/* line 164, ../sass/_grids.scss */
+
+
+/* line 175, ../sass/_grids.scss */
+section.wrapp .sidebar .news form.search-form {
+  background: #5EB9E5;
+  position: relative;
+  width: 100%;
+}
+
+section.wrapp .sidebar .news .screen-reader-text{
+    display: none;
+}
+
+.fa-search:before {
+    float: right;
+    margin-right: 5px;
+    margin-top: 5px !important;
+}
+
+/* line 179, ../sass/_grids.scss */
+section.wrapp .sidebar .news form.search-form input {
+  padding: 15px 40px 15px 15px;
+  border: none;
+  background: #5EB9E5;
+}
+/* line 184, ../sass/_grids.scss */
+section.wrapp .sidebar .news form.search-form input::-webkit-input-placeholder {
+  color: #fff;
+}
+/* line 187, ../sass/_grids.scss */
+section.wrapp .sidebar .news form.search-form input::-moz-placeholder {
+  color: #fff;
+}
+/* line 190, ../sass/_grids.scss */
+section.wrapp .sidebar .news form.search-form input:-moz-placeholder {
+  color: #fff;
+}
+/* line 193, ../sass/_grids.scss */
+section.wrapp .sidebar .news form.search-form input:-ms-input-placeholder {
+  color: #fff;
+}
+/* line 198, ../sass/_grids.scss */
+section.wrapp .sidebar .news form.search-form a i {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 7px 15px;
+}
+/* line 208, ../sass/_grids.scss */
+section.wrapp .sidebar .links {
+  background: #5EB9E4;
+  margin-bottom: 5%;
+}
+/* line 211, ../sass/_grids.scss */
+section.wrapp .sidebar .links h3 {
+  font-weight: bold;
+  border-bottom: 1px solid #3BAADE;
+  padding: 12px;
+  position: relative;
+}
+/* line 216, ../sass/_grids.scss */
+section.wrapp .sidebar .links h3 i {
+  background: #199BD9;
+  padding: 5px 15px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* line 224, ../sass/_grids.scss */
+section.wrapp .sidebar .links div.tags {
+  margin: 5%;
+}
+/* line 229, ../sass/_grids.scss */
+section.wrapp .sidebar .ask-for-students {
+  background: #8ECEEC;
+}
+/* line 232, ../sass/_grids.scss */
+section.wrapp .sidebar .ask-for-students h3 {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 4px 15px;
+  position: relative;
+  background: #5EB9E5;
+}
+/* line 237, ../sass/_grids.scss */
+section.wrapp .sidebar .ask-for-students h3 i {
+  background: #199BD9;
+  padding: 6.5px 15px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* line 246, ../sass/_grids.scss */
+section.wrapp .sidebar .ask-for-students form {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  margin: 5%;
+}
+/* line 249, ../sass/_grids.scss */
+section.wrapp .sidebar .ask-for-students form label {
+  color: #37505E;
+  width: 72.6257%;
+  float: right;
+  margin-left: 5.58659%;
+  padding: 12px 0;
+}
+/* line 254, ../sass/_grids.scss */
+section.wrapp .sidebar .ask-for-students form input[type="radio"] {
+  width: 13.96648%;
+  float: left;
+  margin-left: 5.58659%;
+  margin-top: 8px;
+  padding: 18px 0;
+  background: url(../images/sircl.png) no-repeat;
+  /* ╨Я╨╡╤А╨╡╨║╨╗╤О╤З╨░╤В╨╡╨╗╤М ╨▓╤Л╨║╨╗╤О╤З╨╡╨╜ */
+  -webkit-appearance: none;
+  /* ╨Я╤А╤П╤З╨╡╨╝ ╤З╨╡╨║╨▒╨╛╨║╤Б */
+  appearance: none;
+  cursor: pointer;
+  /* ╨Ъ╤Г╤А╤Б╨╛╤А ╨▓ ╨▓╨╕╨┤╨╡ ╤А╤Г╨║╨╕ */
+}
+/* line 265, ../sass/_grids.scss */
+section.wrapp .sidebar .ask-for-students form input:checked {
+  background: url(../images/sirclhover.png) no-repeat;
+  /* ╨Я╨╡╤А╨╡╨║╨╗╤О╤З╨░╤В╨╡╨╗╤М ╨▓╨║╨╗╤О╤З╨╡╨╜ */
+}
+/* line 270, ../sass/_grids.scss */
+section.wrapp .sidebar .ask-for-students button {
+  background: #8ECEEC;
+  border: 1px solid #199BD9;
+  padding: 5px 70px 5px 5px;
+  margin-left: 5%;
+  position: relative;
+  margin-bottom: 5%;
+}
+/* line 277, ../sass/_grids.scss */
+section.wrapp .sidebar .ask-for-students button a {
+  color: #199BD9;
+}
+/* line 279, ../sass/_grids.scss */
+section.wrapp .sidebar .ask-for-students button a i {
+  padding: 6.5px 5px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #199BD9;
+}
+/* line 287, ../sass/_grids.scss */
+section.wrapp .sidebar .ask-for-students button:hover {
+  background: #199BD9;
+  border: none;
+  padding: 6px 70px 6px 5px;
+}
+/* line 291, ../sass/_grids.scss */
+section.wrapp .sidebar .ask-for-students button:hover a {
+  color: #fff;
+}
+/* line 293, ../sass/_grids.scss */
+section.wrapp .sidebar .ask-for-students button:hover a i {
+  color: #fff;
+}
+/* line 307, ../sass/_grids.scss */
+section.wrapp .content {
+  width: 69.63855%;
+  float: right;
+  margin-left: 1.20482%;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 311, ../sass/_grids.scss */
+section.wrapp .content h2 {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 18px;
+  margin-bottom: 38px;
+  text-align: center;
+  font-size: 2em;
+  color: #1E323E;
+  font-family: Forum;
+}
+/* line 321, ../sass/_grids.scss */
+section.wrapp .content article {
+  width: 41.90308%;
+  float: left;
+  margin-left: 1.76211%;
+  background: #EAEAEE;
+  color: #1E323E;
+  margin-bottom: 5%;
+}
+/* line 326, ../sass/_grids.scss */
+section.wrapp .content article h4 {
+  padding: 20px !important;
+  font-family: Forum;
+  font-size: 1.25em !important;
+  border-bottom: 1px solid #4DAFDE;
+}
+
+section.wrapp .content article h4 a {
+    color: #1E323E !important;
+    font-weight: bold !important;
+}
+/* line 331, ../sass/_grids.scss */
+section.wrapp .content article h4 time {
+  font-family: 'Myriad Pro';
+  font-size: 0.625em;
+  color: #199BD9;
+  float: right;
+  padding: 4px;
+}
+/* line 339, ../sass/_grids.scss */
+section.wrapp .content article p {
+  margin: 20px 15px;
+}
+/* line 342, ../sass/_grids.scss */
+section.wrapp .more-link {
+  background: #52616E;
+  border: none;
+  padding: 5px 70px 5px 5px;
+  float: right;
+  margin-right: 15px;
+    margin-top: 20px !important;
+  position: relative;
+  margin-bottom: 10%;
+  font-family: 'Myriad Pro';
+  font-size: 1em;
+}
+/* line 352, ../sass/_grids.scss */
+section.wrapp .content article button a {
+  color: #fff;
+}
+/* line 355, ../sass/_grids.scss */
+section.wrapp .content article button a i {
+  padding: 6.5px 5px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #fff;
+}
+/* line 363, ../sass/_grids.scss */
+section.wrapp .content article button:hover {
+  background: #1F333F;
+}
+
+/***********************************/
+/***********************************/
+/* line 374, ../sass/_grids.scss */
+footer {
+  background: #1E323E;
+  margin-top: 21.67%;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 378, ../sass/_grids.scss */
+footer .footer-wrap {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 20px;
+  color: #A5ADB2;
+  position: relative;
+}
+/* line 386, ../sass/_grids.scss */
+footer .footer-wrap ul.name {
+  width: 24.09639%;
+  float: left;
+  margin-left: 1.20482%;
+  margin-left: 8.01205%;
+  margin-bottom: 20px;
+}
+/* line 390, ../sass/_grids.scss */
+footer .footer-wrap ul.name li {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 393, ../sass/_grids.scss */
+footer .footer-wrap ul.name li h4 {
+  font-family: Forum;
+}
+/* line 396, ../sass/_grids.scss */
+footer .footer-wrap ul.name li h2 {
+  font-family: Forum;
+  text-transform: uppercase;
+}
+/* line 400, ../sass/_grids.scss */
+footer .footer-wrap ul.name li span {
+  font-size: 0.75em;
+}
+/* line 406, ../sass/_grids.scss */
+footer .footer-wrap ul.adress {
+  width: 32.53012%;
+  float: right;
+  margin-left: 1.20482%;
+  padding: 20px 10px;
+}
+/* line 409, ../sass/_grids.scss */
+footer .footer-wrap ul.adress li {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 5px;
+}
+/* line 413, ../sass/_grids.scss */
+footer .footer-wrap ul.adress li span {
+  font-size: 0.8125em;
+}
+/* line 415, ../sass/_grids.scss */
+footer .footer-wrap ul.adress li span i {
+  margin-right: 10px;
+}
+/* line 422, ../sass/_grids.scss */
+footer .footer-wrap .all-right {
+  width: 83.55422%;
+  float: left;
+  margin-left: 1.20482%;
+  margin-left: 8.01205%;
+  float: left;
+  border-top: 1px solid #627078;
+  font-size: 0.625em;
+  color: #5E6C74;
+  padding-top: 8px;
+  margin-bottom: 15px;
+}
+/* line 432, ../sass/_grids.scss */
+footer .footer-wrap .copy {
+  float: right;
+  position: absolute;
+  top: 128px;
+  right: 8.49398%;
+  font-size: 0.625em;
+  color: #5E6C74;
+}
+
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 14, ../../../susy-2.1.3/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*
+debug: (
+        image: show, // ╨▓╨░╤А╨╕╨░╨╜╤В╤Л: show | hide | show-columns | show-baseline
+        color: rgba(#66f, .5),
+        output: background,
+        toggle: top right,
+    )
+*/
+/***********************************/
+/***********************************/
+/* line 44, ../sass/_grids_contakts.scss */
+.contakt-info {
+  width: 69.63855%;
+  float: right;
+  margin-left: 1.20482%;
+  overflow: hidden;
+  *zoom: 1;
+  margin-bottom: 21.67%;
+}
+/* line 49, ../sass/_grids_contakts.scss */
+.contakt-info h2 {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 18px;
+  margin-bottom: 38px;
+  text-align: center;
+  font-size: 2em;
+  color: #1E323E;
+  font-family: Forum;
+}
+/* line 59, ../sass/_grids_contakts.scss */
+.contakt-info ul.contakt {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  color: #1E323E;
+  margin-bottom: 5%;
+}
+/* line 63, ../sass/_grids_contakts.scss */
+.contakt-info ul.contakt li {
+  display: inline;
+  width: 27.33564%;
+  float: left;
+  margin-left: 1.7301%;
+  margin-left: 2.53012%;
+}
+/* line 67, ../sass/_grids_contakts.scss */
+.contakt-info ul.contakt li h4 {
+  padding: 20px 0;
+  font-family: Forum;
+  font-size: 1.2857em;
+  border-bottom: 1px solid #AEDCF2;
+  margin-bottom: 10px;
+}
+/* line 74, ../sass/_grids_contakts.scss */
+.contakt-info ul.contakt li span, .contakt-info ul.contakt li strong {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  line-height: 140%;
+}
+/* line 79, ../sass/_grids_contakts.scss */
+.contakt-info ul.contakt li:first-child span, .contakt-info ul.contakt li:first-child strong {
+  line-height: 120%;
+}
+/* line 84, ../sass/_grids_contakts.scss */
+.contakt-info ul.contakt li:last-child ul {
+  margin-top: 30px;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+/* line 88, ../sass/_grids_contakts.scss */
+.contakt-info ul.contakt li:last-child ul li {
+  display: inline;
+  width: 6.96203%;
+  float: left;
+  margin-left: 6.32911%;
+  margin-left: 12.6506%;
+}
+/* line 93, ../sass/_grids_contakts.scss */
+.contakt-info ul.contakt li:last-child ul li i {
+  background: #AEDCF2;
+  border: 1px solid #EBF2F5;
+  min-width: 34px;
+  text-align: center;
+  padding: 4px 1px;
+}
+/* line 99, ../sass/_grids_contakts.scss */
+.contakt-info ul.contakt li:last-child ul li i:hover {
+  background: #EBF2F5;
+}
+/* line 104, ../sass/_grids_contakts.scss */
+.contakt-info ul.contakt li:last-child ul li:first-child {
+  margin-left: 0%;
+}
+/* line 112, ../sass/_grids_contakts.scss */
+.contakt-info ul.contakt li:last-child h4 {
+  padding: 5px 0;
+  font-family: 'Myriad Pro';
+  font-size: 1em;
+  border-bottom: none;
+  line-height: 120%;
+}
+/* line 123, ../sass/_grids_contakts.scss */
+.contakt-info .write-to-us {
+  width: 83.04498%;
+  float: left;
+  margin-left: 1.7301%;
+  background: #ECECFB;
+}
+/* line 126, ../sass/_grids_contakts.scss */
+.contakt-info .write-to-us h3 {
+  padding: 15px;
+  position: relative;
+  border-bottom: 1px solid #5EB9E5;
+  font-family: Forum;
+  font-size: 1.4258em;
+  color: #1E323E;
+  line-height: 120%;
+}
+/* line 134, ../sass/_grids_contakts.scss */
+.contakt-info .write-to-us h3 i {
+  background: #5EB9E5;
+  padding: 6.5px 15px;
+  position: absolute;
+  color: #fff;
+  right: 0;
+  top: 0;
+}
+/* line 143, ../sass/_grids_contakts.scss */
+.contakt-info .write-to-us form {
+  margin: 5% 0;
+  position: relative;
+}
+/* line 146, ../sass/_grids_contakts.scss */
+.contakt-info .write-to-us form textarea {
+  width: 65.0%;
+  float: left;
+  margin-left: 2.08333%;
+  background: #fff;
+  border: none;
+  position: absolute;
+}
+/* line 154, ../sass/_grids_contakts.scss */
+.contakt-info .write-to-us form input {
+  width: 27.08333%;
+  float: right;
+  margin-left: 2.08333%;
+  padding: 10px;
+  background: #fff;
+  border: none;
+}
+/* line 160, ../sass/_grids_contakts.scss */
+.contakt-info .write-to-us form input[type="text"] {
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
+/* line 165, ../sass/_grids_contakts.scss */
+.contakt-info .write-to-us form input[type="email"] {
+  position: absolute;
+  top: 45px;
+  right: 15px;
+}
+/* line 173, ../sass/_grids_contakts.scss */
+.contakt-info .write-to-us form textarea::-webkit-input-placeholder, .contakt-info .write-to-us form input::-webkit-input-placeholder {
+  color: #199BD9;
+  font-family: Arial;
+  line-height: 100%;
+}
+/* line 178, ../sass/_grids_contakts.scss */
+.contakt-info .write-to-us form textarea::-moz-placeholder, .contakt-info .write-to-us form input::-moz-placeholder {
+  color: #199BD9;
+  font-family: Arial;
+}
+/* line 182, ../sass/_grids_contakts.scss */
+.contakt-info .write-to-us form textarea:-moz-placeholder, .contakt-info .write-to-us form input:-moz-placeholder {
+  color: #199BD9;
+  font-family: Arial;
+}
+/* line 186, ../sass/_grids_contakts.scss */
+.contakt-info .write-to-us form textarea:-ms-input-placeholder, .contakt-info .write-to-us form input:-ms-input-placeholder {
+  color: #199BD9;
+  font-family: Arial;
+}
+/* line 194, ../sass/_grids_contakts.scss */
+.contakt-info .write-to-us form textarea::-webkit-input-placeholder {
+  padding: 10px;
+}
+/* line 197, ../sass/_grids_contakts.scss */
+.contakt-info .write-to-us form textarea::-moz-placeholder {
+  padding: 10px;
+}
+/* line 200, ../sass/_grids_contakts.scss */
+.contakt-info .write-to-us form textarea:-moz-placeholder {
+  padding: 10px;
+}
+/* line 203, ../sass/_grids_contakts.scss */
+.contakt-info .write-to-us form textarea:-ms-input-placeholder {
+  padding: 10px;
+}
+/* line 209, ../sass/_grids_contakts.scss */
+.contakt-info .write-to-us button {
+  width: 27.08333%;
+  float: right;
+  margin-left: 2.08333%;
+  background: #52616E;
+  border: none;
+  padding: 5px 70px 5px 5px;
+  margin-right: 15px;
+  position: relative;
+  top: 89px;
+  margin-bottom: 15%;
+  font-family: 'Myriad Pro';
+  font-size: 1.3em;
+}
+/* line 221, ../sass/_grids_contakts.scss */
+.contakt-info .write-to-us button a {
+  color: #fff;
+}
+/* line 224, ../sass/_grids_contakts.scss */
+.contakt-info .write-to-us button a i {
+  padding: 9px 5px;
+  position: absolute;
+  right: 40px;
+  top: 0;
+  color: #fff;
+}
+/* line 232, ../sass/_grids_contakts.scss */
+.contakt-info .write-to-us button:hover {
+  background: #1F333F;
+}
+
+.attachment-post-thumbnail {
+    width: 350px !important;
+    height: 230px !important;
+}

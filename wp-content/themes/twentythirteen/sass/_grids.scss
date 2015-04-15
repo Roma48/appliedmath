@@ -1,0 +1,445 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "susy";
+@import "compass/utilities/general/clearfix";
+
+
+
+// Susy Grid Config
+// For more information: http://susydocs.oddbird.net/en/latest/settings/
+
+$susy: (
+    columns: 12,
+    gutters: 1/6, 
+    container: 1200px,
+    math: fluid,
+    output: float,
+    gutter-position: before, //inside,  (before | after | split | inside | inside-static )
+    global-box-sizing: border-box,
+    
+    
+  
+);
+
+@include border-box-sizing;
+/*
+debug: (
+        image: show, // варианты: show | hide | show-columns | show-baseline
+        color: rgba(#66f, .5),
+        output: background,
+        toggle: top right,
+    )
+*/
+.conteiner{
+        @include container;
+}
+
+
+  /*******************************/  
+ //////////////HEADER/////////////
+/*******************************/
+    .big-header{
+            header{
+                background: #1E323E;               
+                .header-wrap{                    
+                        @include clearfix;
+                        @include span(full);
+                        position: relative;
+                        
+                        h1{ 
+                            @include span(3.5 of 12);    
+                            max-width: 255px;
+                            max-height: 135px;
+                            @include clearfix;
+                            position: absolute;
+                            top: 0;
+                            left: span(1);
+                            z-index: 999;
+                        }///Logo
+                       
+                        nav.nav-main{                           
+                            ul.main-menu{
+                                height: 74px;
+                                @include span(8.25 of 12 last);
+                                li{
+                                    display: inline;
+                                    a{
+                                        padding: 7% 3%;
+                                        line-height: 600%; 
+                                        text-transform: uppercase;
+                                        &:hover{
+                                          background: #199BD9;
+                                        }
+                                    }
+
+                                }
+                                li.active{
+                                    a{
+                                      background: #199BD9;
+                                    }
+                                }
+                            }//end ul.main-menu
+                        }//end nav
+                }//header-wrap
+
+    
+                .flexslider{
+                            @include span(full);
+                            min-height: 450px;
+                            position: relative;                            
+                            @include clearfix;
+                            //z-index: 100;
+                            .slides{//ul
+                                //z-index: 1;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                li{
+                                    float: left;                                    
+                                }
+                          
+                            }//end foto-slider
+                            .flex-pauseplay{
+                                a{ 
+                                    position: absolute; 
+                                    bottom: 5px; 
+                                    left: 10px;
+                                }
+                            }
+                            .flex-control-nav {
+                                position: absolute; 
+                                bottom: 5%; 
+                                right: 15%;
+                            }
+                            
+                }//end flexslider               
+            }//end header  
+    }//end big-header
+
+        
+
+    section.wrapp{   
+        
+  /***********************************/  
+ ///////////////SIDEBAR///////////////
+/***********************************/
+        .sidebar{
+            @include span(2.7 of 12);
+            @include clearfix;
+            position: relative;
+            z-index: 12;
+            top: -42px;
+            left: span(0.85);
+
+            .news{
+                background: #199BD9;
+                margin-bottom: 5%;
+                ul{
+                    margin-bottom: 40%;
+                    li{
+                        border-bottom: 1px solid #3CAADF;
+                        padding: 11px;
+                        a{
+                            display: block;
+                            font-size: 1.1428em;
+                            line-height: 120%;
+                            i{
+                                float: right;
+                            }
+                           
+                        }
+                        &:hover{
+                            a{
+                                font-weight: bold;
+                            }   
+                        }
+                    }
+                    li.active{
+                        position: relative; 
+                        a{
+                            font-weight: bold;                   
+                            i{
+                                background: #5EB9E5;
+                                padding: 13px 15px;
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                            }
+                        }
+                    }
+                }//end ul
+
+                form.search{
+                    background: #5EB9E5;
+                    position: relative;
+                    
+                    input{
+                        padding:  15px 40px 15px 15px;
+                        border: none;
+                        background: #5EB9E5;
+                        
+                        &::-webkit-input-placeholder {
+                            color:#fff;
+                        }
+                        &::-moz-placeholder{
+                            color:#fff;
+                        }
+                        &:-moz-placeholder{
+                            color:#fff;
+                        }
+                        &:-ms-input-placeholder{
+                            color:#fff;
+                        }
+                    }
+                    a{
+                        i{
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            padding: 7px 15px;
+                        }
+                    }
+                }//end form
+            }//end news
+
+            .links{
+                background: #5EB9E4;
+                margin-bottom: 5%;
+                h3{
+                    font-weight: bold;
+                    border-bottom: 1px solid #3BAADE;
+                    padding: 12px;
+                    position: relative;                    
+                            i{
+                                background: #199BD9;
+                                padding: 5px 15px;
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                            }
+                }//end h3
+                div.tags{
+                    margin: 5%;
+                }//end div
+            }//end links
+
+            .ask-for-students{
+                background: #8ECEEC;
+                
+                h3{
+                    @include span(full);
+                    padding: 4px 15px;
+                    position: relative; 
+                    background: #5EB9E5;                   
+                    i{
+                        background: #199BD9;
+                        padding: 6.5px 15px;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                    }
+                }//end h3
+
+                form{
+                    @include span(full);
+                    margin: 5%;
+                    label{
+                        color: #37505E;
+                        @include span(2 of 2.7 last);                      
+                         padding: 12px 0;
+                    }
+                    input[type="radio"]{                        
+                        @include span(0.5 of 2.7);
+                        margin-top: 8px;
+                        padding: 18px 0;
+                        background: url(../images/sircl.png) no-repeat; /* Переключатель выключен */
+                        -webkit-appearance: none; /* Прячем чекбокс */
+                        //-moz-appearance: none;
+                        appearance: none;
+                        cursor: pointer; /* Курсор в виде руки */
+                       
+                    }
+                    input:checked {
+                        background: url(../images/sirclhover.png) no-repeat; /* Переключатель включен */
+                    }
+                    
+                }//end form
+                button{
+                    background: #8ECEEC;
+                    border: 1px solid #199BD9;
+                    padding: 5px 70px 5px 5px;
+                    margin-left: 5%;
+                    position: relative;
+                    margin-bottom: 5%; 
+                    a{
+                        color: #199BD9;
+                        i{
+                            padding: 6.5px 5px;
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            color: #199BD9;
+                        }
+                    }
+                    &:hover{
+                        background: #199BD9;
+                        border: none;
+                        padding: 6px 70px 6px 5px;
+                        a{
+                            color: #fff;
+                            i{
+                               color: #fff; 
+                            }
+                        }
+                    }
+                }//end button
+            }//end ask-for-students
+
+        }
+
+
+  /***********************************/  
+ //////////**///CONTENT///////////////
+/***********************************/  
+        .content{
+            @include span(8.4 of 12 last);
+            @include clearfix;
+           
+            h2{
+                 @include span(full);
+                 margin-top: 18px;
+                 margin-bottom: 38px;
+                 text-align: center;
+                 font-size: 2em;
+                 color: #1E323E;
+                 font-family: Forum;
+            }
+
+            article{
+                @include span(3.54 of 8.25);
+                background: #EAEAEE;
+                color: #1E323E;
+                margin-bottom: 5%;
+                h4{
+                    padding: 20px;
+                    font-family: Forum;
+                    font-size: 1.25em;
+                    border-bottom: 1px solid #4DAFDE; 
+                    time{
+                        font-family: 'Myriad Pro';
+                        font-size: 0.625em;
+                        color: #199BD9;
+                        float: right;
+                        padding: 4px;
+                    }
+                }
+                p{
+                    margin: 20px 15px;
+                }
+                button{
+                    background: #52616E;
+                    border: none;
+                    padding: 5px 70px 5px 5px;
+                    float: right;
+                    margin-right: 15px;
+                    position: relative;
+                    margin-bottom: 15%;
+                    font-family: 'Myriad Pro';
+                    font-size: 1em; 
+                    a{
+                        color: #fff;
+                        
+                        i{
+                            padding: 6.5px 5px;
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            color: #fff;
+                        }
+                    }
+                    &:hover{
+                        background: #1F333F;
+                    }
+                }//end button
+            }//end article
+
+        }//end content
+}//end wrapper
+  /***********************************/  
+ /////////////////footer//////////////
+/***********************************/
+        footer{
+            background: #1E323E; 
+            margin-top: 21.67%;  
+            @include clearfix;
+            .footer-wrap{
+                @include span(full);
+                //background: #1E323E;
+                padding-top: 20px;
+                color: #A5ADB2;
+                position: relative;
+                //width: auto;
+
+                ul.name{
+                    @include span(3 of 12);
+                    @include push(0.95);
+                    margin-bottom: 20px;
+                    li{
+                        @include span(full);
+                        
+                        h4{
+                            font-family: Forum;
+                        }
+                        h2{
+                            font-family: Forum;
+                            text-transform: uppercase;
+                        }
+                        span{
+                            font-size: 0.75em;
+                        }
+                    }
+                }//end ul
+
+                ul.adress{
+                    @include span(4 of 12 last);
+                    padding: 20px 10px;
+                    li{
+                        @include span(full);
+                        margin-bottom: 5px;
+                        
+                        span{
+                            font-size: 0.8125em;
+                            i{
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }//end ul
+                
+                .all-right{
+                    @include span(10.05 of 12);
+                    @include push(0.95);
+                    float: left;
+                    border-top: 1px solid #627078;
+                    font-size: 0.625em;
+                    color: #5E6C74;
+                    padding-top: 8px;
+                    margin-bottom: 15px;
+                }
+                .copy{
+                    float: right;
+                    position: absolute;
+                    top: 128px;
+                    right: span(1.15);
+                    font-size: 0.625em;
+                    color: #5E6C74;
+                }
+            }//end container
+        }//end footer
+
+
+
+
